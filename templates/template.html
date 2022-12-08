@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>{{ project|e }}: Bill of Material</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">{{ project|e }}: Bill of Material</a>
+    </header>
+    <article>{% block content %}{% endblock %}</article>
+    <footer>
+      <strong>{{ project|e }} Bill of Material</strong>, Version: {{ version }} ({{ date }})<br />
+      Source at <a class="printable" href="{{ source.url }}">{{ source.repo|e }}</a> &ndash;
+      License: <a href="{{ license.url }}">{{ license.type|e }}</a><br />
+      <strong>This content is provided "as is" and without warranties of any kind either expressed or implied.</strong>
+    </footer>
+  </body>
+</html>

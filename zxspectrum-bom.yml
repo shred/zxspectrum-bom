@@ -1,0 +1,318 @@
+# ZX Spectrum 48K Issue 3B Bill of Material
+---
+project: "ZX Spectrum 48K Issue 3B"
+base: "https://shred.github.io/zxspectrum-bom/"
+version: "0.1"
+date: "2022-12-08"
+source:
+  repo: "GitHub"
+  url: "https://github.com/shred/zxspectrum-bom"
+license:
+  type: "GNU General Public License (GPLv3)"
+  url: "https://www.gnu.org/licenses/gpl-3.0.en.html#content"
+---
+
+Board:
+  - part: "PCB"
+    quantity: 1
+    remark: "PABB's ZX Spectrum 48 Issue 3B Redrawn"
+
+"Integrated Circuits":
+  - part: "ULA 6C001E-6/6C001E-7"
+    package: "DIP40"
+    quantity: 1
+    components: ["IC1"]
+    rare: yes
+    remark: "Replacements: NebULA, vLA82"
+  - part: "Zilog Z80A"
+    package: "DIP40"
+    quantity: 1
+    components: ["IC2"]
+  - part: "74LS157"
+    package: "DIP16"
+    quantity: 4
+    components: ["IC3","IC4","IC25","IC26"]
+  - part: "ROM"
+    package: "DIP28"
+    quantity: 1
+    components: ["IC5"]
+    rare: yes
+    remark: "Replacement: 27C128, requires hardware modification"
+  - part: "4116"
+    package: "DIP16"
+    quantity: 8
+    components: ["IC6","IC7","IC8","IC9","IC10","IC11","IC12","IC13"]
+    rare: yes
+  - part: "LM1889N"
+    package: "DIP18"
+    quantity: 1
+    components: ["IC14"]
+    rare: yes
+  - part: "4432/4464"
+    package: "DIP16"
+    quantity: 8
+    components: ["IC15","IC16","IC17","IC18","IC19","IC20","IC21","IC22"]
+    rare: yes
+    remark: "4432 must be of same type"
+  - part: "74LS32"
+    package: "DIP14"
+    quantity: 1
+    components: ["IC23"]
+  - part: "74LS00"
+    package: "DIP14"
+    quantity: 1
+    components: ["IC24"]
+
+Transistors:
+  - part: "ZTX313"
+    package: "???"
+    quantity: 4
+    components: ["TR1","TR2","TR3","TR6"]
+    remark: "Replacement: BC548C"
+    rare: yes
+  - part: "ZTX650"
+    package: "???"
+    quantity: 1
+    components: ["TR4"]
+    remark: "Replacement: ZTX651"
+    rare: yes
+  - part: "ZTX213"
+    package: "???"
+    quantity: 1
+    components: ["TR5"]
+    remark: "Replacement: BC557, reverse mounted"
+    rare: yes
+  - part: "ZTX450"
+    package: "???"
+    quantity: 1
+    components: ["TR7"]
+    remark: "Replacement: ZTX651"
+    rare: yes
+  - part: "BC184"
+    package: "???"
+    quantity: 2
+    components: ["TR8","TR9"]
+    remark: "Replacement: BC549B"
+
+Diodes:
+  - part: "1N4148"
+    package: "???"
+    quantity: 12
+    components: ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D11", "D12", "D13"]
+  - part: "BA157"
+    package: "???"
+    quantity: 1
+    components: ["D15"]
+  - part: "5V1 Zener"
+    package: "???"
+    quantity: 1
+    components: ["D16"]
+
+Capacitors:
+  - part: "16pF 5%"
+    package: "???"
+    quantity: 2
+    components: ["C72", "C73"]
+  - part: "33pF 10%"
+    package: "???"
+    quantity: 2
+    components: ["C37", "C38"]
+  - part: "47pF 10%"
+    package: "???"
+    quantity: 1
+    components: ["C63"]
+  - part: "100pF 10%"
+    package: "???"
+    quantity: 2
+    components: ["C64", "C67"]
+  - part: "150pF 10%"
+    package: "???"
+    quantity: 2
+    components: ["C52", "C53"]
+  - part: "560pF 10%"
+    package: "???"
+    quantity: 1
+    components: ["C49"]
+  - part: "10nF 10%"
+    package: "???"
+    quantity: 2
+    components: ["C35", "C39"]
+  - part: "47nF 10%"
+    package: "???"
+    quantity: 26
+    components: ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C26", "C29", "C30", "C33", "C40", "C41", "C42", "C48", "C55" , "C56", "C57", "C58", "C59", "C60", "C61", "C62", "C66", "C76"]
+  - part: "100nF 10%"
+    package: "???"
+    quantity: 9
+    components: ["C31", "C32", "C43", "C68", "C69", "C70", "C71", "C75", "C77"]
+  - part: "1µF 50V Electrolytic"
+    package: "Axial"
+    quantity: 2
+    components: ["C27", "C46"]
+  - part: "4.7µF 5V Electrolytic"
+    package: "Axial"
+    quantity: 1
+    components: ["C74"]
+  - part: "22µF 10V Electrolytic"
+    package: "Axial"
+    quantity: 6
+    components: ["C25", "C28", "C34", "C47", "C50", "C65"]
+  - part: "100µF 16V Electrolytic"
+    package: "Axial"
+    quantity: 2
+    components: ["C44", "C45"]
+
+Resistors:
+  - part: "15Ω - 1W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R34"]
+  - part: "15Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 3
+    components: ["R61", "R62", "R64"]
+  - part: "56Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R55"]
+  - part: "68Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R60"]
+  - part: "100Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R32"]
+  - part: "180Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R25"]
+  - part: "220Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R70", "R71"]
+  - part: "330Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 7
+    components: ["R17", "R18", "R19", "R20", "R21", "R22", "R23"]
+  - part: "390Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R53"]
+  - part: "470Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 11
+    components: ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R26", "R27", "R28"]
+  - part: "680Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 2
+    components: ["R33", "R36"]
+  - part: "1kΩ - 1/4W, 2%"
+    package: "TH"
+    quantity: 1
+    components: ["R58"]
+  - part: "1kΩ - 1/4W, 5%"
+    package: "TH"
+    quantity: 11
+    components: ["R24", "R37", "R42", "R45", "R46", "R47", "R56", "R63", "R73", "R76", "R77"]
+  - part: "1.8kΩ - 1/4W, 2%"
+    package: "TH"
+    quantity: 1
+    components: ["R59"]
+  - part: "2.2kΩ - 1/4W, 5%"
+    package: "TH"
+    quantity: 3
+    components: ["R48", "R51", "R52"]
+  - part: "3kΩ - 1/4W, 2%"
+    package: "TH"
+    quantity: 1
+    components: ["R43"]
+  - part: "4.7kΩ - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R50"]
+  - part: "5.1kΩ - 1/4W, 2%"
+    package: "TH"
+    quantity: 1
+    components: ["R44"]
+  - part: "8.2kΩ - 1/4W, 5%"
+    package: "TH"
+    quantity: 8
+    components: ["R9", "R10", "R11", "R12", "R13", "R14", "R15", "R16"]
+  - part: "10kΩ - 1/4W, 5%"
+    package: "TH"
+    quantity: 13
+    components: ["R28", "R29", "R30", "R35", "R49", "R65", "R66", "R67", "R68", "R69", "R72", "R74", "R75"]
+  - part: "100Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R54"]
+  - part: "220Ω - 1/4W, 5%"
+    package: "TH"
+    quantity: 1
+    components: ["R31"]
+
+Oscillators:
+  - part: "14 MHz Crystal"
+    package: "??"
+    quantity: 1
+    components: ["X1"]
+  - part: "4.433619 MHz Crystal"
+    package: "??"
+    quantity: 1
+    components: ["X2"]
+
+Other:
+  - part: "Beeper"
+    quantity: 1
+  - part: "7805"
+    quantity: 1
+    remark: "Replacement: Traco Power TSR1-2450"
+  - part: "Heatsink"
+    quantity: 1
+    remark: "Only needed if 7805 is used"
+  - part: "Coil"
+    quantity: 1
+    rare: true
+  - part: "3.5mm Mono Audio Jack"
+    quantity: 2
+    rare: true
+  - part: "DC Power Socket 5.5mm/2.1mm"
+    quantity: 1
+  - part: "Keyboard Connector 5-pin"
+    quantity: 1
+    rare: true
+  - part: "Keyboard Connector 8-pin"
+    quantity: 1
+    rare: true
+  - part: "TV Modulator"
+    quantity: 1
+    rare: yes
+  - part: "Wire Jumper"
+    quantity: 4
+
+"Sockets (optional)":
+  - part: "Socket, DIP14"
+    package: "DIP14"
+    quantity: 2
+    components: ["IC23", "IC24"]
+  - part: "Socket, DIP16"
+    package: "DIP16"
+    quantity: 20
+    components: ["IC3", "IC4", "IC6", "IC7", "IC8", "IC9", "IC10", "IC11", "IC12", "IC13", "IC15", "IC16", "IC17", "IC18", "IC19", "IC20", "IC21", "IC22", "IC25", "IC26"]
+  - part: "Socket, DIP18"
+    package: "DIP18"
+    quantity: 1
+    components: ["IC14"]
+    mouser: {id: "575-11044318"}
+  - part: "Socket, DIP28"
+    package: "DIP28"
+    quantity: 1
+    components: ["IC5"]
+    remark: "ROM"
+  - part: "Socket, DIP40"
+    package: "DIP40"
+    quantity: 2
+    components: ["IC1", "IC2"]
+    mouser: {id: "575-11044640"}
+

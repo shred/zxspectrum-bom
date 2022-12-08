@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ZX Spectrum 48K Issue 3B: Bill of Material</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">ZX Spectrum 48K Issue 3B: Bill of Material</a>
+    </header>
+    <article>
+<h1>Mouser CSV Export</h1>
+<p>For your convenience, we offer a CSV export of the parts that are available at <a href="https://www.mouser.com">Mouser Electronics</a>.</p>
+<p>Copy the CSV below to your clipboard, and paste it into a text editor or spreadsheet tool. There you can modify the CSV, change quantities or remove parts that you already have. After that, <a href="https://www.mouser.com/Bom/Upload">upload the CSV</a> to create a Bill of Material in your customer account.</p>
+<h2>Before You Start…</h2>
+<ul>
+<li><strong>Have you gathered the <span class="rare">Rare</span> parts already?</strong> The parts on this list will be useless without them.</li>
+<li><strong>This list is not complete!</strong> It only contains the standard components that are sold by Mouser Electronics. You will have to find other sources for the rest. We cannot assist you there.</li>
+<li><strong>Do not blindly order this list, but scrutinize every part first!</strong></li>
+<li><strong>The choice of parts is only meant to be an example.</strong> There may cheaper or better suited alternatives.</li>
+<li><strong>Mind the graduated prices.</strong> The quantities in this list are the exact amounts needed to assemble the board. Ordering larger quantities may be cheaper. It&rsquo;s also good to have a few parts as spare.</li>
+<li><strong>Some parts are replacements</strong> because the original parts have been discontinued. They do not meet the original specifications and thus may cause problems.</li>
+<li><strong>Some parts are optional.</strong> Check if you need them.</li>
+</ul>
+<h2>The CSV</h2>
+
+<button onclick="document.getElementById('csv').select();document.execCommand('copy');">Copy to Clipboard</button>
+<textarea id="csv" readonly="readonly">
+"Quantity 1","Description","Customer Part No.","Mouser Part Number"
+
+1,"Socket, DIP18",,575-11044318
+2,"Socket, DIP40",,575-11044640</textarea>
+
+<h2>Disclaimer</h2>
+<ul>
+<li>We offer this CSV export for your convenience only. Use it at your own risk.</li>
+<li>Components may be out of stock or discontinued.</li>
+<li>Other retailers may be cheaper or may have parts that are missing on this list.</li>
+<li>This project is neither endorsed nor supported by Mouser Electronics.</li>
+<li>We do not get a provision or other kind of compensation from Mouser Electronics.</li>
+</ul>
+
+</article>
+    <footer>
+      <strong>ZX Spectrum 48K Issue 3B Bill of Material</strong>, Version: 0.1 (2022-12-08)<br />
+      Source at <a class="printable" href="https://github.com/shred/zxspectrum-bom">GitHub</a> &ndash;
+      License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#content">GNU General Public License (GPLv3)</a><br />
+      <strong>This content is provided "as is" and without warranties of any kind either expressed or implied.</strong>
+    </footer>
+  </body>
+</html>
