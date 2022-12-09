@@ -27,11 +27,35 @@
 <p>This bill of material only comprises of the components required for the mainboard itself. For a complete ZX Spectrum replica, you will need:</p>
 <ul>
 <li>This board, fully assembled and tested.</li>
-<li>A ZX Spectrum or ZX Spectrum+ case with keyboard. You can use an original case, but there are also replica cases, keyboard membranes and rubber key mats.</li>
+<li>A ZX Spectrum or ZX Spectrum+ case with keyboard. You can use an original case, but there are also replica cases, faceplates, and key mats in all kind of colors, as well as new keyboard membranes.</li>
 <li>A power supply with correct polarity: 9 V, 1.5 A, 5.5mm/2.1mm barrel plug, <strong>center negative</strong>. Note that most wall power supplies on the market are center positive, and would instantly kill your ZX Spectrum.</li>
 </ul>
+<p>If you are new to electronics and soldering, there are easier ways to solder your own ZX Spectrum. For example, there are kits for the <a href="https://www.bytedelight.com/?product_cat=harlequin48">Harlequin 48K</a> and <a href="https://www.bytedelight.com/?product_cat=harlequin128">Harlequin 128K</a> clone that include all components and detailed assembly instructions.</p>
+<h2>Rare Parts</h2>
+<p>The easiest way to get these parts is to buy an old or broken ZX Spectrum, and salvage them.</p>
+<ul>
+<li><strong>ULA</strong>: There are modern ULA replicas like <a href="http://blog.retroleum.co.uk/electronics-articles/nebula-spectrum-ula-chip-replacement-module/">Retroleum Nebula</a> or <a href="https://vdrivezx.com/vla82/">vRetro vLA82</a>.</li>
+<li><strong>Z80A</strong>: It is still in production. If you cannot find one in a DIP-40, you can use a Z80 adapter board for other case types. The clock frequency should be 4MHz. Higher frequencies can be used as well, but won&rsquo;t make your ZX Spectrum run faster.</li>
+<li><strong>4116</strong>: This DRAM type is long out of production, but <abbr title="New Old Stock">NOS</abbr> parts are still available. Alternatively there is an <a href="https://lotharek.pl/productdetail.php?id=267">SRAM module</a> that replaces all eight 4116 with a single board.</li>
+<li><strong>4132</strong>: This DRAM is actually a 4164 where one half of the memory turned out to be defective on production. If you get 4132 chips, make sure they are of the same brand and type (e.g. taken from the same ZX Spectrum). It&rsquo;s easier to use 4164 chips as drop-in replacement though, they are still available as <abbr title="New Old Stock">NOS</abbr> parts. You can also mix 4132 and 4164 chips.</li>
+<li><strong>ROM</strong>: The easiest way is to salvage a ROM from a broken ZX Spectrum. A 27C128 or 27C256 EPROM can be used as replacement, but requires a <a href="http://blog.retroleum.co.uk/electronics-articles/how-to-replace-the-rom-of-a-zx-spectrum-with-an-eprom/">modification to the hardware</a>.</li>
+<li><strong>LM1889N</strong>: This part is long out of production, but can still be found as <abbr title="New Old Stock">NOS</abbr> part.</li>
+<li><strong>Transistors</strong>: The original ZTX transistors are out of production, but they all can be replaced with ZTX651 (which is still in production) and standard BC-type transistors. Check the datasheets for the correct orientation! For example, if you use a BC557 as replacement for TR5, the flat side must face in the opposite direction.</li>
+<li><strong>Coil</strong>: The coil was custom made for Sinclair. There are new coils available on auction platforms sometimes, but they are expensive. The best way is to salvage a coil from a broken ZX Spectrum. If it is defective, <a href="https://shred.zone/cilla/page/458/zx-spectrum-recoiled.html#new-coil">it can be repaired easily</a>. Another alternative is to use the SRAM module mentioned above, which does not need -5V and +12V. You can then leave out the coil, TR4, TR5, D15, D16, and a few capacitors and resistors. Be aware that a few expansions might need these voltages as well, and might not work if you modify your ZX Spectrum that way. You could also use DC/DC converters for generating -5V and +12V, of course.</li>
+<li><strong>Keyboard Connectors</strong>: They can be found as <abbr title="New Old Stock">NOS</abbr> part from time to time, and otherwise can be salvaged from a broken ZX Spectrum. There are replacement parts in this Bill of Material list that are still in production, however they are not optimal.</li>
+<li><strong>TV Modulator</strong>: Needs to be reused from a broken ZX Spectrum. However, as most modern TVs don&rsquo;t have a matching input anymore, it can easily be replaced with a <a href="https://shred.zone/cilla/page/459/zx-spectrum-chrome.html#composite-mod">simple RCA connector</a> to get a composite output (&ldquo;composite mod&rdquo;). You could also use an <a href="https://github.com/redhawk668/ZX-Spectrum-S-Video">s-video module</a>, which will enhance the image quality even more (&ldquo;s-video mod&rdquo;).</li>
+<li><strong>Beeper</strong>: The speaker should have an impedance of 40Ω, but similar speakers will do as well.</li>
+<li><strong>7805 and Heatsink</strong>: They should be replaced with a modern DC/DC converter, as it stays cool and does not need a heatsink. Since the original ULA gets pretty warm itself, and cannot be cooled with a heatsink in the original ZX Spectrum case for space reasons, any additional heat source should be avoided.</li>
+</ul>
 <h2>Sockets</h2>
-<p>This list contains sockets for all chips for your convenience. It is of course up to you if you want to use all of them.</p>
+<p>This Bill of Material also includes sockets for all chips. All sockets are optional, of course. In an original ZX Spectrum, sockets were used as deemed necessary by Sinclair at that time, but usually the ULA was always socketed, and the LM1889N was never socketed.</p>
+<p>Generally we recommend to use precision sockets. However, if you are going to use replica parts (e.g. a replica ULA or a memory board), you should check if they fit into precision sockets, and maybe resort to standard sockets.</p>
+<p>If you are going to use the Retroleum Nebula as ULA replacement, all nearby chips (IC3, IC4, IC24, IC25) should be soldered directly to the board, as they would collide with the Nebula board otherwise.</p>
+<p>If you want to heatsink the original ULA, you might have to solder it directly to the board for space reasons.</p>
+<h2>Configuration</h2>
+<ul>
+<li>If 4164 memory chips are used, all of these configurations will work, so just pick one.</li>
+</ul>
 <h2>Disclaimer</h2>
 <p>This is not an official list! It was collected and reviewed by Sinclair enthusiasts.</p>
 <p>Although we strive to make the information in this project as helpful and accurate as possible, it is provided &ldquo;as is&rdquo; and without warranties of any kind either expressed or implied.</p>
