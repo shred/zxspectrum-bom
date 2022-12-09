@@ -41,22 +41,23 @@ Board:
     components: ["IC5"]
     rare: yes
     remark: "Replacement: 27C128 or 27C256, requires hardware modification"
-  - part: "4116"
+  - part: "4116 - 150ns or less"
     package: "DIP16"
     quantity: 8
     components: ["IC6","IC7","IC8","IC9","IC10","IC11","IC12","IC13"]
     rare: yes
+    remark: "Replacement: 4164, requires hardware modification"
   - part: "LM1889N"
     package: "DIP18"
     quantity: 1
     components: ["IC14"]
     rare: yes
-  - part: "4132"
+  - part: "4532 - 200ns or less"
     package: "DIP16"
     quantity: 8
     components: ["IC15","IC16","IC17","IC18","IC19","IC20","IC21","IC22"]
     rare: yes
-    remark: "Replacement: 4164. All 4132 must be of same brand and type."
+    remark: "Replacement: 4164. All 4532 must be of same brand and type."
   - part: "74LS32"
     package: "DIP14"
     quantity: 1
@@ -122,67 +123,67 @@ Diodes:
     mouser: {id: "78-BZX55C5V1"}
 
 Capacitors:
-  - part: "16pF 5% MLCC"
+  - part: "16pF - 5% MLCC"
     package: "TH Axial"
     quantity: 2
     components: ["C72", "C73"]
     mouser: {id: "581-SR151A160JAR"}
-  - part: "33pF 10% MLCC"
+  - part: "33pF - 10% MLCC"
     package: "TH Axial"
     quantity: 2
     components: ["C37", "C38"]
     mouser: {id: "594-A330J15C0GH5TAA"}
-  - part: "47pF 10% MLCC"
+  - part: "47pF - 10% MLCC"
     package: "TH Axial"
     quantity: 1
     components: ["C63"]
     mouser: {id: "594-A470J15C0GH5TAA"}
-  - part: "100pF 10% MLCC"
+  - part: "100pF - 10% MLCC"
     package: "TH Axial"
     quantity: 2
     components: ["C64", "C67"]
     mouser: {id: "594-A101K15C0GH5TAA"}
-  - part: "150pF 10% MLCC"
+  - part: "150pF - 10% MLCC"
     package: "TH Axial"
     quantity: 2
     components: ["C52", "C53"]
     mouser: {id: "80-C410C151K3G5TA"}
-  - part: "560pF 10% MLCC"
+  - part: "560pF - 10% MLCC"
     package: "TH Axial"
     quantity: 1
     components: ["C49"]
     mouser: {id: "581-SA101A561JARC"}
-  - part: "10nF 10% MLCC"
+  - part: "10nF - 10% MLCC"
     package: "TH Axial"
     quantity: 2
     components: ["C35", "C39"]
     mouser: {id: "581-SA105C103K"}
-  - part: "47nF 10% MLCC"
+  - part: "47nF - 10% MLCC"
     package: "TH Axial"
     quantity: 26
     components: ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C26", "C29", "C30", "C33", "C40", "C41", "C42", "C48", "C55" , "C56", "C57", "C58", "C59", "C60", "C61", "C62", "C66", "C76"]
     mouser: {id: "594-A473K15X7RF5TAA"}
-  - part: "100nF 10% MLCC"
+  - part: "100nF - 10% MLCC"
     package: "TH Axial"
     quantity: 9
     components: ["C31", "C32", "C43", "C68", "C69", "C70", "C71", "C75", "C77"]
     mouser: {id: "594-A104K15X7RF5TAA"}
-  - part: "1µF 50V Electrolytic"
+  - part: "1µF - 50V Electrolytic"
     package: "TH Axial"
     quantity: 2
     components: ["C27", "C46"]
     mouser: {id: "594-MAL203038108E3"}
-  - part: "4.7µF 5V Electrolytic"
+  - part: "4.7µF - 5V Electrolytic"
     package: "TH Axial"
     quantity: 1
     components: ["C74"]
     mouser: {id: "594-MAL203038478E3"}
-  - part: "22µF 10V Electrolytic"
+  - part: "22µF - 10V Electrolytic"
     package: "TH Axial"
     quantity: 6
     components: ["C25", "C28", "C34", "C47", "C50", "C65"]
     mouser: {id: "594-MAL203036229E3"}
-  - part: "100µF 16V Electrolytic"
+  - part: "100µF - 16V Electrolytic"
     package: "TH Axial"
     quantity: 2
     components: ["C44", "C45"]
@@ -312,7 +313,7 @@ Oscillators:
     mouser: {id: "710-830003099B"}
 
 Other:
-  - part: "Beeper, 20mW, 40Ω"
+  - part: "Speaker, 20mW, 40Ω"
     quantity: 1
     rare: true
     mouser: {id: "497-SM230332-2"}
@@ -323,6 +324,7 @@ Other:
     mouser: {id: "495-TSR-1-2450"}
   - part: "Heatsink"
     quantity: 1
+    rare: true
     remark: "Only if 7805 is used."
   - part: "Coil"
     quantity: 1
@@ -330,19 +332,21 @@ Other:
   - part: "3.5mm Mono Audio Jack Socket"
     quantity: 2
     rare: true
-    remark: "e.g. Cliff FCR1281"
+    remark: "e.g. Cliff FCR1281, with one leg clipped off"
   - part: "DC Power Socket 5.5mm/2.1mm"
     quantity: 1
     remark: "e.g. Cliff FCR681465P"
   - part: "Keyboard Connector 5-pin"
     quantity: 1
     rare: true
+    remark: "Molex 5229-05CPB"
     mouser: {id: "571-5-520315-5"}
   - part: "Keyboard Connector 8-pin"
     quantity: 1
     rare: true
+    remark: "Molex 5229-08CPB"
     mouser: {id: "571-5-520315-8"}
-  - part: "TV Modulator"
+  - part: "Astek UM1233 Modulator"
     quantity: 1
     rare: yes
     remark: "Alternatives: Composite Mod, S-Video Mod"
