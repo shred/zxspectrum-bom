@@ -8,8 +8,8 @@ Copy the CSV below to your clipboard, and paste it into a text editor or spreads
 
 * **Have you gathered the <span class="rare">Rare</span> parts already?** The parts on this list will be useless without them.
 * **This list is not complete!** It only contains the standard components that are sold by Mouser Electronics. You will have to find other sources for the rest. We cannot assist you there.
-* **Do not blindly order this list, but scrutinize every part first!**
-* **The choice of parts is only meant to be an example.** There may cheaper or better suited alternatives.
+* **Do not blindly order this list**, but scrutinize every part first!
+* **The choice of parts is only meant to be an example.** There may be cheaper or better suited alternatives.
 * **Mind the graduated prices.** The quantities in this list are the exact amounts needed to assemble the board. Ordering larger quantities may be cheaper. It's also good to have a few parts as spare.
 * **Some parts are replacements** because the original parts have been discontinued. They do not meet the original specifications and thus may cause problems.
 * **Some parts are optional.** Check if you need them.
