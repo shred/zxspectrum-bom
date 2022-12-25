@@ -238,7 +238,7 @@ Resistors:
   - part: "470Ω - 1/4W, 5%"
     package: "TH"
     quantity: 11
-    components: ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R26", "R27", "R28"]
+    components: ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R26", "R27", "R78"]
     mouser: {id: "603-MF0207FTE52-470R"}
   - part: "680Ω - 1/4W, 5%"
     package: "TH"
