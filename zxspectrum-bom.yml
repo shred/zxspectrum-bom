@@ -182,6 +182,7 @@ Capacitors:
     package: "TH Axial"
     quantity: 6
     components: ["C25", "C28", "C34", "C47", "C50", "C65"]
+    remark: "Leave out C65 if S-Video Mod is used"
     mouser: {id: "594-MAL203036229E3"}
   - part: "100µF - 16V Electrolytic"
     package: "TH Axial"
