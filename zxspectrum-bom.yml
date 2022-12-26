@@ -2,8 +2,8 @@
 ---
 project: "ZX Spectrum 48K Issue 3B"
 base: "https://shred.github.io/zxspectrum-bom/"
-version: "0.2"
-date: "2022-12-25"
+version: "0.3"
+date: "2022-12-26"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/zxspectrum-bom"
