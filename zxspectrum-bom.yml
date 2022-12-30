@@ -72,11 +72,18 @@ Board:
 Transistors:
   - part: "ZTX313"
     package: "TO92"
-    quantity: 4
-    components: ["TR1","TR2","TR3","TR6"]
+    quantity: 2
+    components: ["TR1","TR2"]
     remark: "Replacement: BC548C (flat side in other direction)"
     rare: yes
     mouser: {id: "637-BC548C"}
+  - part: "ZTX313"
+    package: "TO92"
+    quantity: 2
+    components: ["TR3","TR6"]
+    remark: "Replacement: MPS2369"
+    rare: yes
+    mouser: {id: "863-MPS2369"}
   - part: "ZTX650"
     package: "TO92"
     quantity: 1
