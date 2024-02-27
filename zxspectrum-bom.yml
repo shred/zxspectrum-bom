@@ -2,8 +2,8 @@
 ---
 project: "ZX Spectrum 48K Issue 3B"
 base: "https://shred.github.io/zxspectrum-bom/"
-version: "1.0"
-date: "2023-01-07"
+version: "1.1"
+date: "2024-02-27"
 source:
   repo: "GitHub"
   url: "https://github.com/shred/zxspectrum-bom"
@@ -52,6 +52,7 @@ Board:
     quantity: 1
     components: ["IC14"]
     rare: yes
+    remark: "Alternative: SN94459N (rare, not recommended)"
   - part: "4532 - 200ns or less"
     package: "DIP16"
     quantity: 8
@@ -74,7 +75,7 @@ Transistors:
     package: "TO92"
     quantity: 2
     components: ["TR1","TR2"]
-    remark: "Replacement: BC548C (flat side in other direction)"
+    remark: "Replacement: BC548C (reverse mounted)"
     rare: yes
     mouser: {id: "637-BC548C"}
   - part: "ZTX313"
@@ -95,14 +96,14 @@ Transistors:
     package: "TO92"
     quantity: 1
     components: ["TR5"]
-    remark: "Replacement: BC557 (flat side in other direction)"
+    remark: "Replacement: BC557 (reverse mounted)"
     rare: yes
     mouser: {id: "637-BC557C"}
   - part: "ZTX450"
     package: "TO92"
     quantity: 1
     components: ["TR7"]
-    remark: "Replacement: ZTX651"
+    remark: "Replacement: ZTX651 or BC337 (reverse mounted)"
     rare: yes
     mouser: {id: "522-ZTX651"}
   - part: "BC184"
