@@ -29,6 +29,12 @@ This is not an official list! It was collected and reviewed by Sinclair enthusia
 
 Although we strive to make the information in this project as helpful and accurate as possible, it is provided "as is" and without warranties of any kind either expressed or implied. **Use it at your own risk!**
 
+## Building
+
+After cloning, initialize the submodule: `git submodule init; git submodule update`.
+
+Invoke `generate.py` to generate the page content. You will find the generated pages in the `pages` directory.
+
 ## License
 
 This project is distributed under the terms of [GNU General Public License (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html#content).
