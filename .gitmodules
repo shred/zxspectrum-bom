@@ -1,0 +1,4 @@
+[submodule "pages"]
+	path = pages
+	url = git@codeberg.org:shred/zxspectrum-bom.git
+	branch = pages

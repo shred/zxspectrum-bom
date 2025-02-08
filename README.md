@@ -1,16 +1,16 @@
-# ZX Spectrum 48K Bill of Material
+# ZX Spectrum 48K Bill of Materials
 
-This project contains the Bill of Material for building an own **ZX Spectrum 48K Issue 3B** mainboard.
+This project contains the Bill of Materials for building an own **ZX Spectrum 48K Issue 3B** mainboard.
 
 <div style="text-align:center;font-size:130%;font-weight:bold">
-<a href="https://shred.github.io/zxspectrum-bom/">Read the Bill of Material here!</a>
+<a href="https://shred.codeberg.page/zxspectrum-bom/">Read the Bill of Materials here!</a>
 </div>
 
 ## Contribute
 
 This list is meant to be a community work. Our goal is to have a canonical list that people can rely on when ordering parts for building an own ZX Spectrum mainboard.
 
-However, this list may not be free of errors. If you have found one, please [open an issue](https://github.com/shred/zxspectrum-bom/issues) or send a patch.
+However, this list may not be free of errors. If you have found one, please [open an issue](https://codeberg.org/shred/zxspectrum-bom/issues) or send a patch.
 
 ## Technical Background
 

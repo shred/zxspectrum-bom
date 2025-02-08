@@ -1,12 +1,12 @@
 # ZX Spectrum 48K Issue 3B Bill of Material
 ---
 project: "ZX Spectrum 48K Issue 3B"
-base: "https://shred.github.io/zxspectrum-bom/"
-version: "1.2"
-date: "2024-04-19"
+base: "https://shred.codeberg.page/zxspectrum-bom/"
+version: "1.3"
+date: "2025-02-08"
 source:
-  repo: "GitHub"
-  url: "https://github.com/shred/zxspectrum-bom"
+  repo: "Codeberg"
+  url: "https://codeberg.org/shred/zxspectrum-bom"
 license:
   type: "GNU General Public License (GPLv3)"
   url: "https://www.gnu.org/licenses/gpl-3.0.en.html#content"
